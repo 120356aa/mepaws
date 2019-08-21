@@ -4,6 +4,7 @@ import { HeaderWrap } from './headerStyles';
 function Header() {
   return (
     <HeaderWrap>
+      Header
     </HeaderWrap>
   ) 
 }
