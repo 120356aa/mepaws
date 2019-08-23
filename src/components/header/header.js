@@ -3,12 +3,9 @@ import React, { useState } from 'react';
 import { HeaderWrap, NavBox } from './headerStyles';
 import Logo from '../../assets/logo.svg';
 
-function Header(props) {
+function Header() {
   const [status, setStatus] = useState(false);
-
-  function toggleNav() {
-    setStatus(!status);
-  }
+  function toggleNav() { setStatus(!status) }
 
   return (
     <HeaderWrap>
