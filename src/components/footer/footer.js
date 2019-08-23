@@ -5,7 +5,6 @@ import { FooterWrap } from './footerStyles';
 function Footer() {
   return (
     <FooterWrap>
-      Footer
     </FooterWrap>
   )
 }

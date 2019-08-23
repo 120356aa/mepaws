@@ -3,28 +3,34 @@ import React, { useState } from 'react';
 import { HeaderWrap, NavBox } from './headerStyles';
 import Logo from '../../assets/logo.svg';
 
-const useForceUpdate = () => useState()[1];
-
 function Header(props) {
   const [status, setStatus] = useState(false);
-  const forceUpdate = useForceUpdate();
 
   function toggleNav() {
     setStatus(!status);
-    forceUpdate();
   }
 
   return (
     <HeaderWrap>
       <img src={Logo} />
+      <div className="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
       <div className="navButton" onClick={toggleNav}>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <NavBox props={props}>
-
-      </NavBox>
+      {status ? (
+        <NavBox>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </NavBox> ) : null }
     </HeaderWrap>
   ) 
 }
