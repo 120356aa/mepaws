@@ -27,11 +27,23 @@ export const HeaderWrap = styled.div`
       display: flex;
     }
 
-    a {
-      padding: 0 14px;
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
+    .linkContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      .icon {
+        height: 100%;
+        width: 26px;
+      }
+
+      a {
+        margin: 0 26px 0 6px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: ${fonts.primary};
+      }
     }
   }
 
@@ -66,14 +78,22 @@ export const NavBox = styled.div`
   justify-content: center;
   align-items: center;
 
-  a {
-    text-decoration: none;
-    padding: 0 12px;
-    color: black;
-    font-size: 18px;
+  .linkContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 
-    ${media.largeMb} {
-      padding: 0 17px;
+    .icon {
+      height: 100%;
+      width: 20px;
+    }
+
+    a {
+      margin: 0 22px 0 6px;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-family: ${fonts.primary};
     }
   }
 `;

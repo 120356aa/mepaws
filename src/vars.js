@@ -3,7 +3,7 @@ export const colors = {
 }
 
 export const fonts = {
-
+  primary: `'Titillium Web', sans-serif;`,
 }
 
 export const media = {
