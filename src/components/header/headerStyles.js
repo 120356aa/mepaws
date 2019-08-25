@@ -12,9 +12,20 @@ export const HeaderWrap = styled.div`
   position: fixed;
 
   img {
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
+
+    ${media.tablet} {
+      width: 42px;
+      height: 42px;
+      margin-left: 14px;
+    }
+
+    ${media.largeTb} {
+      width: 44px;
+      height: 44px;
+    }
   }
 
   .nav {
@@ -48,8 +59,8 @@ export const HeaderWrap = styled.div`
   }
 
   .navButton {
-    width: 34px;
-    height: 28px;
+    width: 30px;
+    height: 26px;
     margin-right: 12px;
     display: flex;
     flex-flow: column nowrap;
