@@ -41,19 +41,22 @@ export const HeaderWrap = styled.div`
     .linkContainer {
       display: flex;
       justify-content: flex-start;
-      align-items: flex-end;
+      align-items: center;
+      border: 1px solid red;
 
       .icon {
         height: 100%;
         width: 26px;
+        border: 1px solid green;
       }
 
       a {
-        margin: 0 26px 0 6px;
+        margin: -1px 26px 0 6px;
         text-decoration: none;
         color: black;
         font-size: 18px;
         font-family: ${fonts.primary};
+        border: 1px solid blue;
       }
     }
   }
