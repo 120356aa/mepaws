@@ -4,8 +4,9 @@ import { colors, fonts, media } from '../../vars';
 export const BannerWrap = styled.div`
   width: 100%;
   // border: 1px solid red;
-  padding-top: 160px;
+  padding-top: 100px;
 
+  ${media.largeMb} { padding-top: 150px; }
   ${media.desktop} {
     padding-top: 210px;
     display: flex;
@@ -32,7 +33,7 @@ export const BannerWrap = styled.div`
 
     h1 {
       font-family: ${fonts.secondary};
-      font-size: 56px;
+      font-size: 54px;
       font-weight: 800;
       color: ${colors.darkgray};
       span { color: ${colors.primary}}
@@ -47,7 +48,7 @@ export const BannerWrap = styled.div`
 
   .contBox {
     // border: 1px solid red;
-    margin: 70px 0 290px 0;
+    margin: 55px 0 290px 0;
 
     ${media.desktop} {
       margin: 42px 0 0 40px;
@@ -60,7 +61,7 @@ export const BannerWrap = styled.div`
 
     h3 {
       font-family: ${fonts.primary};
-      font-size: 19px;
+      font-size: 18px;
       text-align: center;
       width: 300px;
       margin: 0px auto;
