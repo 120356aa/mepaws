@@ -1,9 +1,13 @@
 export const colors = {
+  white: '#ffffff',
   lightgray: '#F4F4F4',
+  darkgray: '#444444',
+  primary: '#00AAA2'
 }
 
 export const fonts = {
   primary: `'Titillium Web', sans-serif;`,
+  secondary: `'Source Sans Pro', sans-serif;`
 }
 
 export const media = {

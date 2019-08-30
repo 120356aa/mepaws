@@ -7,7 +7,7 @@ export const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: ${colors.lightgray};
+  background-color: ${colors.white};
   box-shadow: 4px 0 8px lightgray;
   position: fixed;
 
@@ -42,12 +42,10 @@ export const HeaderWrap = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      border: 1px solid red;
 
       .icon {
         height: 100%;
         width: 26px;
-        border: 1px solid green;
       }
 
       a {
@@ -56,7 +54,6 @@ export const HeaderWrap = styled.div`
         color: black;
         font-size: 18px;
         font-family: ${fonts.primary};
-        border: 1px solid blue;
       }
     }
   }
@@ -83,7 +80,7 @@ export const HeaderWrap = styled.div`
 export const NavBox = styled.div`
   position: fixed;
   right: 0;
-  top: 73px;
+  top: 68px;
   width: 100%;
   height: 50px;
   background-color: ${colors.lightgray};
