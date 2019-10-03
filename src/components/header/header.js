@@ -19,10 +19,10 @@ function Header() {
           <img src={Home} className="icon" />
           <a href="#">Home</a>
         </div>
-        <div className="linkContainer">
+        {/* <div className="linkContainer">
           <img src={About} className="icon" />
           <a href="#">About</a>
-        </div>
+        </div> */}
         <div className="linkContainer">
           <img src={Services} className="icon" />
           <a href="#">Services</a>
@@ -43,10 +43,10 @@ function Header() {
             <img src={Home} className="icon" />
             <a href="#">Home</a>
           </div>
-          <div className="linkContainer">
+          {/* <div className="linkContainer">
             <img src={About} className="icon" />
             <a href="#">About</a>
-          </div>
+          </div> */}
           <div className="linkContainer">
             <img src={Services} className="icon" />
             <a href="#">Services</a>
