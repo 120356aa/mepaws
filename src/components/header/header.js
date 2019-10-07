@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { HeaderWrap, NavBox } from './headerStyles';
 import Logo from '../../assets/logo.svg';
@@ -17,15 +18,11 @@ function Header() {
       <div className="nav">
         <div className="linkContainer">
           <img src={Home} className="icon" />
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </div>
-        {/* <div className="linkContainer">
-          <img src={About} className="icon" />
-          <a href="#">About</a>
-        </div> */}
         <div className="linkContainer">
           <img src={Services} className="icon" />
-          <a href="#">Services</a>
+         <Link to="/services">Services</Link>
         </div>
         <div className="linkContainer">
           <img src={Contact} className="icon" />
@@ -41,15 +38,11 @@ function Header() {
         <NavBox>
           <div className="linkContainer">
             <img src={Home} className="icon" />
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </div>
-          {/* <div className="linkContainer">
-            <img src={About} className="icon" />
-            <a href="#">About</a>
-          </div> */}
           <div className="linkContainer">
             <img src={Services} className="icon" />
-            <a href="#">Services</a>
+            <Link to="/services">Services</Link>
           </div>
           <div className="linkContainer">
             <img src={Contact} className="icon" />
